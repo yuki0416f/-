@@ -1,0 +1,115 @@
+
+/* wwarks横並び */
+.works {
+    display: flex;
+    /* 横方向の揃え方 */
+    justify-content: center;
+}
+#works-1 {
+     margin-left: 20px;
+
+}
+#works-3 {
+    margin-right: 20px;
+}
+
+.works p {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px
+}
+/* works p画像に合わせる */
+.works span { 
+    width: auto;   
+}
+/* タイトル枠線 */
+#my {
+    border: solid 1px #000;
+    padding: 10px 40px;
+}
+/* ナビ黒丸なくす */
+#li {
+    list-style: none;
+}
+/*  ナビ文字サイズ*/
+/* ナビ配置 */
+#nav {
+    font-size: 34px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto 200px;
+    color: #000;
+}
+.about {
+    margin: auto 130px;
+}
+.works {
+    margin: auto 130px;
+}
+#works-1,#works-2,#works-3 {
+    padding: 20px;
+}
+/* ナビ一直線 */
+#ul {
+    display: flex;
+    font-size: 34px
+}
+/* リンクの下線非表示 */
+#nav a {
+    text-decoration: none;
+}
+/* マウスが重なった時だけ */
+#nav a:hover {
+    text-decoration: underline;
+}
+/* 見出しの文字サイズ */
+#index-h1 {
+    font-size: 34px;
+}
+/* 名前の文字サイズ */
+.name {
+    font-size: 24px;
+}
+/* 文章・コピーライトの文字サイズ */
+#about li ,span {
+    font-size: 18px;
+}
+/* メイン画像 */
+#main-visual img {
+    width: 100%;
+}
+/* 人物画像を丸くする */
+.about img {
+    border-radius: 50%;
+}
+/* 共通事項 */
+.google-fonts {
+    font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 34px;
+}
+/* プロフィール文章を右に配置 */
+.about {
+    display: flex;
+}
+
+/* aboutとworks文字真ん中に */
+.index {
+    text-align: center;
+    font-size: 34px;
+}
+footer {
+    text-align: center;
+}
+/* スマホ対応*/
+@media screen and (max-width: 767px) {
+    .works > div {
+        display: block;
+        width: 100%;
+    }
+    .about {
+        display: inline;
+    }
+}
