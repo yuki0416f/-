@@ -1,0 +1,134 @@
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+/* Webフォント */
+.google-fonts {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/* Myprofileの部分 */
+.home {
+    border: solid 1px #000;
+    padding: 20px 40px;
+    margin-left: 40px;
+    display: flexbox;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;   /* 中央揃え */
+}
+
+/* ナビゲーション */
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;/* 横並びレイアウト */
+    margin: 20px auto 20px auto;
+    max-width: 960px;
+    /* nav>aにつける？どちらでも反映される？ */
+    font-size: 34px;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* ナビのメニュー */
+/* nav a ジャなくて.classでもいいの？ */
+nav a {
+    text-decoration: none;
+    color: #000;
+/* ナビメニュー余白 */
+/* 教材では、nav>aと入れ子で指定されていたが、入れ子を使わなくてもいいのか？ */
+    margin: 0 10px;
+}
+
+/* メイン画像（カメラ） */
+.mainimages {
+    width: 100%;
+    margin-top: 20px;
+}
+/* Aboutセクション */
+/* 名前のサイズ、文字太く */
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+/* 見出しのサイズ */
+h1 {
+    font-size: 34px;
+    /* 中央に配置 */
+    text-align: center;
+}
+/* 人物写真を丸くする */
+.about-image {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    height: 280px;
+    width: 280px;
+}
+
+/* プロフィール文章を右にする */
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 20px;
+    justify-content: center;  /* 中央揃え */
+}
+
+/* aboutプロフィール右の文章div */
+.profile {   
+    margin-left: 20px;
+    max-width: 60%; /* テキストが画像に重ならないための制約 */
+}
+
+/* プロフィールの文字サイズ */
+li {
+    font-size: 18px;
+}
+
+/* Worksセクション */
+/* 縦から横並びに */
+.works {
+    display: flex;
+    /* 横並びの揃え方　中央 */
+    justify-content: center;
+    /* 画面幅が足りない時に折り返す */
+    flex-wrap: wrap;
+    
+    margin: 20px auto;
+    font-size: 18px;
+    min-width: 960px;/* 最大幅を設定 */
+}
+/*  */
+/* Works画像と説明文のdiv */
+.item {
+    width: 25%;
+    margin: 20px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+}
+/* フッター　コピーライト */
+footer {
+    text-align: center;
+    padding-bottom: 100px;
+    font-size: 18px;
+}
+/* スマホ対応 */
+@media screen and (max-width: 767px){
+.item {
+    width: 100%;
+}
+
+.profile {
+    margin-left: 10px;max-width: 70%;     /* テキストの幅を調整 */
+}
+
+nav {
+    flex-wrap: wrap;     /* 必要に応じて折り返す */
+}
+}
