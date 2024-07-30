@@ -1,0 +1,156 @@
+body {
+    max-width: 1080px;
+    margin: 0 auto;
+    font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+section > img {
+    max-width: 600px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+nav {
+    text-align: right;
+    font-size: 14px;
+}
+
+.main-visual {
+    position: relative;
+    height: 400px
+}
+
+.main-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 150px 0;
+    background-color: #04414A;
+    max-width: 620px;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    color: white;
+    z-index: 10;
+    display: block;
+}
+h1 {
+    font-size: 60px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-weight: bold;
+}
+.main-message > p {
+    font-size: 28px;
+    margin: 0 0 0 50px;
+}
+h2 {
+    margin: 40px 0 0 0;
+}
+  /* 小見出しの後に、擬似要素で下線ロゴをつける */
+h2::after {
+    content: url(images/line.png);
+    margin-left: 10px;
+}
+/* コンセプト画像 */
+.concept-photo {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* itemを横並び　コンセプト */
+#concept {
+    margin: 80px auto 0 auto;
+    padding: 10px 40px 0px 40px;
+   }
+   
+.concept-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.concept-left, .concept-right {
+    flex: 1;
+}
+.concept-left > h3 , .concept-right > h3 {
+    font-size: 30px;
+    text-align: center;
+}
+.concept-left > p , .concept-right > p {
+    width: 80%;
+    text-align: center;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+/* プロダクト　セクション */
+/* 写真 */
+.product-photo {
+    width: 45%;
+}
+span {
+    font-weight: bold;
+    color: #04414A;
+    font-size: 16px;
+    
+}
+/* プロダクト見出し */
+/* セクション全体の背景色 */
+#product {
+    position: relative; 
+    background-color: #FAFAFA;
+    margin: 20px 0 80px 0;
+    padding: 10px 40px 0 40px;
+}
+/* 四つのコンテンツをグループ化するdiv */
+#PRODUCT > div {
+    margin-top: 40px;
+    /* 横並びにする */
+    display: flex;
+}
+/* 左右をグループ化するdiv */
+.product-left, .product-right {
+    width: 50%;
+    margin-right: 20px;
+}
+/* 右側のdivの間に */
+.product-right {
+    margin-top: 80px;
+
+}
+/* 一つ一つのコンテンツをグループ化するdiv */
+.product-left > div, .product-right > div {
+    position: relative;
+    height: 480px;
+    margin-right: 20px;
+}
+
+.product-photo {
+    width: 100%;
+}
+/* 見出しと説明文をグループ化するdiv */
+.product-explain {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    margin: 0 40px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+.product-left-1 > h3 {
+
+}
+.product-left-1 > p {
+    font-size: 18px;
+    
+}
